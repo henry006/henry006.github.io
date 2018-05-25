@@ -13,14 +13,14 @@ body {
 
 h1 {
     font-size:  1.9rem ;
-    color: brown;
+    color: white;
 }
 
 h2 {
     font-size:  1.9rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
-    background-color: lightpink;
+    background-color: steelblue;
 
 }
 
@@ -34,7 +34,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: lightpink;
+    background-color: steelblue;
     color: whitesmoke;
 
 }

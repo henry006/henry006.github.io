@@ -1,0 +1,100 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Cabin Condensed', sans-serif;/* Declare the base font-family */
+    background-color:antiquewhite;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 80%;
+    margin: auto;
+    padding: .0rem;;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+    background-color: antiquewhite;
+}
+header h1 {}
+header img {
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+header .subheading {}
+
+nav {
+    background-color:cadetblue;
+    text-align:center;
+}
+nav button {}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .75rem;
+    text-decoration:none;
+    font-size: 1.2rem
+}
+nav ul li.active a {}
+nav ul li a:hover {
+    background-color:brown;
+
+}
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main img {
+    width:100%;
+    height: auto;
+}
+main figure img { }
+table {
+    width:50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin:auto;
+}
+table th{
+    border:1px solid black;
+}
+
+table td{
+    border: 1px solid black;
+}
+main article img {
+    width: 100%;
+    height: auto;
+    margin: 7px;
+    box-shadow: 3px 3px 3px #bbb;
+}
+
+main article {
+    padding: .50rem;
+    text-align:justify;
+
+}
+
+footer {
+    clear:both;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 30px;
+}
+
+/*class slectors*/
+.forecast {display:none;}
+.weather-summary{
+    word-spacing: 50px;
+    font-size: 1.6rem;
+    color:aliceblue;
+    padding:20px;
+    background-color:coral;
+}

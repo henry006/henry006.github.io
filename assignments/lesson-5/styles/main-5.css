@@ -2,8 +2,8 @@
 
 body {
     font-size: 16px;
-    font-family: Ubuntu,sans-serif;/* Declare the base font-family */
-    background-color:whitesmoke;
+    font-family: 'Cabin Condensed', sans-serif;/* Declare the base font-family */
+    background-color:antiquewhite;
     }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */

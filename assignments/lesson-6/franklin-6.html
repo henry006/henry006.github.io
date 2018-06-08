@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>CIT 230 Franklin Weather Page | Henrri Ramirez | BYU-Idaho</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Assignment Franklin Weather Page for Henrri Student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-5.css">
+        <link rel="stylesheet" href="styles/medium-5.css">
+        <link rel="stylesheet" href="styles/large-5.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <header>
+            <img src="images/twradar.png" alt="The Weather Logo">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <!-- srcset allows the browser to pick an image based on pixel resolution, or width of the screen, in the example below it will take it based on the size of the screen-->
+            <section class="mainimage">
+                <img src="images/franklin-large.jpg" alt="Sunny day" srcset="images/franklin-large.jpg 1134w, images/franklin-medium.jpg 945w, images/franklin-small.jpg 472w"
+                     >
+            </section>
+
+            <center><h1>Weather Summary</h1></center>
+
+            <figure>
+            </figure>
+
+            <section class="weather-summary">
+
+                <div class="highlow">
+                    <center>
+                        <span>High:90&deg;F</span>
+                        <span>Low:66&deg;F</span>
+                        <span>Precipitation:0&#37;</span>
+                        <span>Wind:5mph</span>
+                    </center>
+                </div>
+                <!-- Replaced the following code for weather summary inline view
+
+<div class="current">
+<span>Sunny:</span>
+<picture>
+<img src="images/#" alt="">
+</picture>
+</div>
+<div class="conditions">
+<p>Precipitation:</p>
+<p>Wind Speed:</p>
+</div>
+-->
+            </section>
+
+            <section class="forecast">
+
+                <table>
+                    <caption><h3>Ten Day Forecast</h3></caption>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <img src="images/bike.jpg">
+                <p class="town-article">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget mi elementum, commodo augue sed, bibendum leo. In auctor tempus lacus, in fermentum est tempor eget. Phasellus porta enim elit, ut consectetur orci suscipit imperdiet. Vestibulum pulvinar lacus in tempus fringilla. Sed et eleifend nulla, nec pharetra ipsum. Phasellus mollis tellus quis augue mollis placerat. Suspendisse luctus risus sit amet lorem fermentum porttitor. Phasellus odio dui, porttitor a dui bibendum, pellentesque fringilla leo. Praesent vitae nulla non libero aliquet auctor vel ac purus. Sed faucibus leo in lacus rhoncus, at fermentum elit vestibulum. Integer tempus ipsum erat, quis finibus nisl auctor in.
+                </p>
+                <p>
+                    In at viverra elit. In feugiat elit mollis, tempor dolor ac, iaculis odio. Nulla dapibus justo ut finibus consectetur. Quisque et dolor rhoncus, aliquam dui vel, ultrices purus. Praesent sapien arcu, viverra eu dignissim eget, venenatis ut urna. In congue egestas enim, quis ornare mi dapibus vel. Vestibulum vulputate sapien a enim ornare ornare. Duis vel scelerisque dui, at egestas nunc. Pellentesque semper urna purus, vel posuere elit auctor quis. Sed malesuada erat orci, vel sollicitudin lectus suscipit vel. Nunc dignissim metus eu velit tincidunt, et porta tellus sollicitudin. Vestibulum cursus ultrices dictum.
+                </p>
+                <p>
+                    Duis pellentesque volutpat nunc blandit sodales. Sed porttitor, est quis hendrerit ornare, ante odio euismod lectus, a luctus velit orci ac lacus. Pellentesque quis erat laoreet dui hendrerit congue vitae in diam. Cras rutrum, ex non elementum aliquet, ex dui hendrerit urna, ut blandit nunc eros id justo. Integer faucibus ante in aliquet tincidunt. Fusce congue libero eget nulla laoreet, eget cursus elit lobortis. Aenean id lacus sed nisi posuere pellentesque. Vivamus a pulvinar ante. Nam dictum, leo eget pretium volutpat, ligula lectus iaculis lorem, rutrum congue orci mauris iaculis quam. Aliquam viverra ut odio et volutpat. Phasellus quis tortor tortor. Mauris nec neque ac velit finibus vehicula sed ac purus. Donec feugiat, purus quis sollicitudin semper, ligula massa laoreet purus, at blandit diam dui a massa.
+                </p>
+                <p>
+                    Praesent massa nulla, ornare at luctus non, tristique in massa. Quisque aliquam convallis lobortis. Etiam feugiat, nibh vel euismod cursus, orci quam sollicitudin enim, vel porta velit sapien aliquet sapien. Phasellus elementum rhoncus nulla, et tempus leo molestie et. Curabitur viverra est turpis, in rutrum lorem sodales at. Etiam ut maximus nibh. Nulla vel varius urna, vel rhoncus enim. Proin elit nulla, porta et congue ut, dapibus in augue. Phasellus malesuada sapien diam, eget rutrum nunc lacinia vel. Morbi id enim sit amet mi ornare porta vel sit amet massa. Duis interdum facilisis nulla vitae tempor.
+                </p>
+
+                <!--<img src="images/bike.jpg" alt="Raining in Mexico City"> -->
+            </article>
+
+        </main>
+
+        <footer>
+            <section class="contact">
+                Contact information placeholder
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | The Weather Radar | <span id="currentdate"></span>
+            </section>
+
+        </footer>
+        <script src="scripts/currentdate.js"></script>
+    </body>
+</html>

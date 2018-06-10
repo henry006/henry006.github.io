@@ -9,8 +9,11 @@
         display: inline-block;
     }
 
-    main article img {
+
+  main article img {
         width: 50%;
         float:right;
     }
+
+
 }

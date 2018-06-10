@@ -9,7 +9,7 @@ body {
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
     max-width: 80%;
     margin: auto;
-    padding: .0rem;;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    padding: .0rem;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {
@@ -38,12 +38,15 @@ nav {
 
 @media only screen and (max-width: 37.5em) {
      .responsive li {display: block; margin: 2px 0;	border: 1px solid #ddd; }
+
     }
 
 @media only screen and (min-width: 37.5em) {
     header,	nav { 	max-width: 80%;	}
     .hamburger { display: none;	}
     .navigation li { display: inline-block; }
+    .grid {display: grid;}
+    .main image {display:none;}
 
 
 }
@@ -137,18 +140,31 @@ div {background-color:#fff; padding: 1rem; border:5px solid coral;}
 #ws {border:5px solid #ffff; background-color:#ffff; text-align:center;}
 #t {border:5px solid #ffff; background-color:#ffff; text-align:center;}
 
+/*------------------------------Gallery grid and flex box-------------------*/
 
 
 
 
+.grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.grid div{
+    background-color: cadetblue;
+    border-color: aliceblue;
+    font-size: 18px;
+    display: inline-block;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 
 
 
 
-
-
-
-
+/* hover effect - not anchor tags around images */
+main div img:hover {box-shadow: 5px 5px 10px gray;}
+/* rounded corners - boxmodel */
 
 
 
